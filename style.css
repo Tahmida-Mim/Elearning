@@ -1,0 +1,559 @@
+/********************
+Common CSS 
+*********************/
+body{
+    color: #666666;
+    font-family: Georgia;
+    font-size: 16px;
+    line-height: 1.5em;
+    margin: 0;
+}
+.container{
+    margin: 0 auto;
+    max-width: 1100px;
+    width: 96%;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.aligenleft{
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.aligenright{
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+.aligencenter{
+    display: block;
+    margin: 0 auto 15px;
+}
+/********************
+Top header CSS 
+*********************/
+#header_area{
+    width: 100%;
+    clear: both;
+}
+.top-header{
+    background-color: #ba2e1f;
+    width: 100%;
+    padding: 12px 0px;
+}
+.inner_top_header{
+   overflow: hidden;
+}
+.top-header-link{
+    width: 70%;
+    float: left;
+}
+.top-header-link ul{
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   text-align: left;
+}
+.top-header-link ul li{
+   display: inline-block;
+   margin-right: 20px;
+   position: relative;
+}
+.top-header-link ul li::after{
+    background-color: #fff;
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 14px;
+    top: 7px;
+    right: -12px;
+ }
+ .top-header-link ul li:last-child::after{
+     display: none;
+ }
+.top-header-link ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    display: block;
+ }
+ .top-header-link ul li a:hover{
+    color: #ddd;
+ }
+.top-header-serch{
+    width: 30%;
+    float: right;
+}
+.top-header-serch form{
+    float: right;
+    background: #fff;
+    border-radius: 25px;
+    max-width: 210px;
+    width: 96%;
+    padding: 2%;
+}
+.top-header-serch input{
+    border: 0px solid white;
+    width: 84%;
+    padding: 1%;
+    float: left;
+}
+.top-header-serch input[type="submit"]{
+    background-image: url("img/serch.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 13%;
+    background-color: #fff;
+    cursor: pointer;
+}
+/********************
+Middle header CSS 
+*********************/
+.middle_header{
+    width: 100%;
+    clear: both;
+}
+.inner_middle_header{
+    padding: 30px 0px;
+    overflow: hidden;
+}
+.middle_header_logo{
+    width: 240px;
+    float: left;
+}
+.middle_header_logo img{
+     width: 240px;
+}
+.middle_header_icon{
+    max-width: 400px;
+    width: 100%;
+    float: right;
+    padding-top: 10px;
+}
+.middle_header_icon ul{
+    text-align: right;
+}
+.middle_header_icon ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+}
+.middle_header_icon ul li a{
+    display: block;
+}
+.middle_header_icon ul li a i{
+    width: 35px;
+    height: 25px;
+    background-color: #333333;
+    border-radius: 50%;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 8px;
+}
+.middle_header_icon ul li a:hover i.fa-linkedin{
+    background-color:#0177B5;
+}
+.middle_header_icon ul li a:hover i.fa-twitter{
+    background-color:#43BCEB;
+}
+.middle_header_icon ul li a:hover i.fa-pinterest{
+    background-color:#E42B33;
+}
+.middle_header_icon ul li a:hover i.fa-google-plus{
+    background-color:#DC4335;
+}
+.middle_header_icon ul li a:hover i.fa-rss{
+    background-color:#ee802f ;
+}
+/********************
+Navbar  CSS 
+*********************/
+#main_menu{
+    clear: both;
+    width: 100%;
+}
+.inner_nav{
+   background-color: #333333;
+   border-radius: 5px;
+   position: relative;
+   min-height: 30px;
+   padding: 15px 0;
+   z-index: 1;
+}
+.inner_nav::after{
+    background-color:#2b2b2b;
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    left: 0;
+    content: "";
+    z-index: -1;
+}
+#main_menu ul{
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#main_menu ul li{
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+}
+#main_menu ul li a{
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    color: #e9e8e3;
+    padding: 1px;
+}
+/**********
+ dropdown style 
+ **********/
+ #main_menu ul ul{
+    position: absolute;
+    background-color: #333333;
+    width: 180px;
+    left: -999999px;
+    top: 25px;
+}
+#main_menu ul li:hover ul{
+    left: 0;
+}
+#main_menu ul ul ul{
+    left: -999999px;
+    top: 0;
+}
+#main_menu ul li:hover ul ul{
+    left: -999999px;
+}
+#main_menu ul ul li:hover ul{
+    left: 180px;
+}
+#main_menu ul ul li{
+    margin: 0;
+    display: block;
+}
+#main_menu ul li:hover a{
+    color: #ba2e1f;
+}
+#main_menu ul li:hover ul li a{
+    color: #e9e8e3;
+}
+#main_menu ul ul li:hover a{
+    background:#ba2e1f ;
+}
+#main_menu ul ul li:hover li a{
+    background:none;
+} 
+#main_menu ul ul ul li a:hover{
+    background:#ba2e1f ;
+} 
+
+/********************
+Slider  CSS 
+*********************/
+.inner_slider{
+    display: block;
+}
+.item{
+    position: relative;
+}
+.item img{
+    width: 100%;
+}
+.slider_caption{
+    position: absolute;
+    color: white;
+    width: 70%;
+    line-height: 40px;
+    font-size: 25px;
+    color: #0bf53ee0;
+    text-align: center;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.slick-prev{
+    left: 0;
+    z-index: 999;
+}
+.slick-next{
+    right: 0;
+}
+/********************
+Banner  CSS 
+*********************/
+#banner_area{
+    background-color: #fff;
+    margin: 10px 0 0 0;
+    padding: 2%;
+}
+.inner_banner{
+    overflow: hidden;
+}
+.inner_banner img{
+    width: 300px;
+    height: 350px;
+    border-radius: 100%;
+    margin-right: 5%;
+}
+.inner_banner h2{
+    color: #000000;
+    font-size: 40px;
+    font-family: Georgia;
+    line-height: 1em;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+.inner_banner p{
+   color: #666666;
+   font-size: 16px;
+   font-family: Georgia;
+   font-weight: normal;
+}
+.inner_banner a{
+   color: #ba2e1f;
+   font-size: 16px;
+   font-family: Georgia;
+   font-weight: normal;
+   float: right;
+   text-decoration: none;
+   text-transform: uppercase;
+}
+.inner_banner a:hover{
+    color: black;
+}
+/********************
+Work area CSS 
+*********************/
+#work_area{
+    background-color: #f2f2f2;
+    padding: 50px 0px;
+}
+.child_work{
+   width: 31%;
+   float: left; 
+   margin: 0px 1% 10px;
+}
+.child_work .about_img{
+    height: 150px;
+    width: 290px;
+}
+.child_work h2{
+    color: #333333;
+    font-size: 26px;
+    font-weight: normal;
+    margin-bottom: 50px;
+}
+.child_work p{
+   color: #878787;
+   font-size: 14px;
+}
+.child_work a{
+    color: #b92d1f;
+    font-size: 14px;
+    float: right;
+    display: block;
+    text-decoration: none;
+}
+.child_work a:hover{
+    color: #2b2b2b;
+}
+.inner_work{
+   overflow: hidden;
+}
+.about_area{
+   margin-left: 0;
+}
+.child_service{
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.service-image{
+    width: 20%;
+    float: left;
+}
+.service-img img{
+    width: 64px;
+    height: 64px;
+}
+.service_text{
+    width: 75%;
+    float: right;
+}
+.service_text h3{
+    color: #878787;
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.service_text p{
+    margin-top: 0;
+    line-height: 1.5em;
+}
+.testomonial_area{
+   margin-right: 0;
+}
+.child_testimonial{
+    overflow: hidden;
+    width: 100%;
+}
+.child_testimonial h3{
+    margin-top: 0;
+    background-image: url("img/testimonial-image.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    color: #989898;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px 0px 15px 50px;
+}
+.child_testimonial h3 span{
+    font-weight: normal;
+}
+.child_testimonial p{
+    line-height: 1.5em;
+}
+/********************
+Footer area CSS 
+*********************/
+.footer_area{
+    background-color: #ffffff;
+    padding: 30px 0px;
+}
+.inner_footer{
+    overflow: hidden;
+    width: 100%
+}
+.child_footer{
+    margin: 0;
+    margin: 0px 2% 10px;
+    width: 21%;
+    float: left;
+}
+.child_footer h3{
+    color: #666666;
+    font-size: 16px;
+    font-weight: normal;
+    border-top: 1px solid #666666;
+    padding: 15px 0;
+}
+.child_footer h4{
+    color: #666666;
+    font-size: 14px;
+    line-height: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+.child_footer p{
+    color: #666666;
+    font-size: 14px;
+    line-height: 1.5em;
+}
+.child_footer p a{
+    color: #b92d1f;
+    font-size: 14px;
+    text-decoration: none;
+}
+.child_footer p a:hover{
+    color: #b4a9a6;
+}
+.child_footer ul{
+    display: block;
+    margin: 0px;
+    padding: 0;
+}
+.child_footer ul li{
+    background-image: url("img/child_blog-img.jpg");
+    background-repeat: no-repeat;
+    background-size: 8px;
+    background-position: center left;
+    list-style: none;
+    border-bottom: 1px solid #c9c4c4;
+    padding: 5px 0 5px 20px;
+}
+.child_footer ul li:last-child{
+    border-bottom: 0px solid #c9c4c4;
+}
+.child_footer ul li a{
+    text-decoration: none;
+    color: #666666;
+    font-size: 14px;
+}
+.child_footer ul li a:hover{
+    color: #b4a9a6;
+}
+.child_blog{
+    overflow: hidden;
+}
+.child_blog h6{
+    color: #666666;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+}
+.child_blog h6 a{
+    text-decoration: none;
+    color: #b82c1f;
+    font-size: 13px;
+    float: left;
+    margin-top: 0px;
+}
+.child_blog a{
+    color: #b82c1f;
+    font-size: 14px;
+    float: right;
+    text-decoration: none;
+    margin-top: -14px;
+}
+.child_blog a:hover{
+    color: #b4a9a6;
+}
+.child_footer input{
+     background-color: #f2f2f2;
+     border: none;
+     border-radius: 10px;
+     padding: 5% 5%;
+     margin: 3% 0;
+     width: 95%;
+     font-size: 14px;
+}
+.child_footer textarea{
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 10px;
+    padding: 5% 5%;
+    margin: 3% 0;
+    width: 95%;
+    font-size: 16px;
+    resize: none;
+}
+.child_footer input[type="submit"]{
+    width: 80px;
+    color: #ba2e1f;
+    font-size: 14px;
+    cursor: pointer;
+}
+.child_footer input[type="submit"]:hover{
+    background-color:#b4a9a6; ;
+}
+#copyright_area{
+    background-color: #1d1313;
+    padding: 10px 0;
+}
+.inner_copyright{
+    overflow: hidden;
+    text-align: center;
+}
+.inner_copyright p{
+    color: #fff;
+    font-size: 15px;
+}
